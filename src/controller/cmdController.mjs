@@ -10,7 +10,7 @@ export class CommandController {
 
     onCommand(message) {
         for (let command of this.commands) {
-            if (message.content.startsWith(command.name)) {
+            if (message.content.startsWith(command.name) && (command.adminOnly && this.botController.isAdmin(message) || !command.adminOnly)) {
                 command.run(message, message.content.split(" "));
             }
         }
