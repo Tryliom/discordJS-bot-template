@@ -1,0 +1,16 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "DiscordJS bot template",
+  "main": "src/main.jms",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules src/main.mjs"
+  },
+  "author": "Tryliom",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "discord.js-reaction-menu": "^1.1.1",
+    "dotenv": "^8.2.0"
+  }
+}
